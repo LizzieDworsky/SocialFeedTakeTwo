@@ -1,5 +1,7 @@
 import { useState } from "react";
+import CreatePost from "./components/CreatePost";
 import DisplayPosts from "./components/DisplayPosts";
+import NavBar from "./components/NavBar";
 
 function App() {
     const [posts, setPosts] = useState({
@@ -11,7 +13,8 @@ function App() {
 
     return (
         <div>
-            <h1>Hello World</h1>
+            <NavBar />
+            <CreatePost />
             <DisplayPosts />
         </div>
     );
