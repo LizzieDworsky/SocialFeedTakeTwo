@@ -1,11 +1,15 @@
 import React from "react";
 import Post from "./Post";
 
-const DisplayPosts = (props) => {
+const DisplayPosts = ({ posts }) => {
     return (
-        <div>
-            <Post />
-        </div>
+        <ul>
+            {posts.map((item) => (
+                <li key={item.id}>
+                    <Post />
+                </li>
+            ))}
+        </ul>
     );
 };
 
