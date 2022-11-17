@@ -1,6 +1,6 @@
 import React from "react";
 
-const CreatePost = (props) => {
+const CreatePost = ({ setPosts }) => {
     return <div>Form Goes Here</div>;
 };
 

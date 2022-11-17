@@ -12,12 +12,26 @@ function App() {
             isLiked: false,
             isDisliked: false,
         },
+        {
+            id: 2,
+            name: "Josh Dworsky",
+            body: "Go Niners Go!",
+            isLiked: false,
+            isDisliked: false,
+        },
+        {
+            id: 3,
+            name: "Mike Terrill",
+            body: "Go Packers!",
+            isLiked: false,
+            isDisliked: false,
+        },
     ]);
 
     return (
         <div>
             <NavBar />
-            <CreatePost />
+            <CreatePost setPosts={setPosts} />
             <DisplayPosts posts={posts} />
         </div>
     );

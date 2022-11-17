@@ -6,7 +6,7 @@ const DisplayPosts = ({ posts }) => {
         <ul>
             {posts.map((item) => (
                 <li key={item.id}>
-                    <Post />
+                    <Post post={item} />
                 </li>
             ))}
         </ul>
