@@ -1,15 +1,25 @@
 import React from "react";
 import { useState } from "react";
 
-const CreatePost = ({ posts }) => {
-    const [newPost, setNewPost] = useState({});
+const CreatePost = ({ posts, setPosts }) => {
     const [name, setName] = useState("Name Goes here");
-    const [body, setBody] = useState("Body goes here");
+    const [message, setMessage] = useState("Body goes here");
 
     function handleCreate(event) {
         event.preventDefault();
-        let tempPost = {};
-        setNewPost(tempPost);
+        let tempPost = {
+            id: posts.length + 1,
+            name: name,
+            message: message,
+            isLiked: false,
+            isDiliked: false,
+        };
+        createPost(tempPost);
+    }
+
+    function createPost(tempPost) {
+        let tempEntries = [...posts, tempPost];
+        setPosts(tempEntries);
     }
 
     return (
@@ -20,11 +30,11 @@ const CreatePost = ({ posts }) => {
                 value={name}
                 onChange={(event) => setName(event.target.value)}
             />
-            <label>Body</label>
+            <label>Message</label>
             <input
                 type="text"
-                value={body}
-                onChange={(event) => setBody(event.target.value)}
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
             />
             <button type="submit">Post</button>
         </form>

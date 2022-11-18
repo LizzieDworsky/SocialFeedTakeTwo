@@ -8,21 +8,21 @@ function App() {
         {
             id: 1,
             name: "Amy Dworsky",
-            body: "I love the 49ers!",
+            message: "I love the 49ers!",
             isLiked: false,
             isDisliked: false,
         },
         {
             id: 2,
             name: "Josh Dworsky",
-            body: "Go Niners Go!",
+            message: "Go Niners Go!",
             isLiked: false,
             isDisliked: false,
         },
         {
             id: 3,
             name: "Mike Terrill",
-            body: "Go Packers!",
+            message: "Go Packers!",
             isLiked: false,
             isDisliked: false,
         },
@@ -31,7 +31,7 @@ function App() {
     return (
         <div>
             <NavBar />
-            <CreatePost posts={posts} />
+            <CreatePost posts={posts} setPosts={setPosts} />
             <DisplayPosts posts={posts} />
         </div>
     );

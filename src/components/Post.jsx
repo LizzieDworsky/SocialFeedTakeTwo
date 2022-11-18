@@ -4,7 +4,7 @@ const Post = ({ post }) => {
     return (
         <div>
             <p>{post.name}</p>
-            <p>{post.body}</p>
+            <p>{post.message}</p>
         </div>
     );
 };
