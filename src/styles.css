@@ -1,0 +1,11 @@
+.like-dislike-svg {
+    padding-left: 18px;
+    padding-right: 10px;
+}
+.thumb-up {
+    color: green;
+}
+
+.thumb-down {
+    color: red;
+}
