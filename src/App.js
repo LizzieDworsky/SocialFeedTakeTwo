@@ -31,7 +31,7 @@ function App() {
     return (
         <div>
             <NavBar />
-            <CreatePost setPosts={setPosts} />
+            <CreatePost posts={posts} />
             <DisplayPosts posts={posts} />
         </div>
     );

@@ -1,7 +1,11 @@
 import React from "react";
 
 const NavBar = (props) => {
-    return <div>Nav Bar Goes Here</div>;
+    return (
+        <ul>
+            <li>Social Feed</li>
+        </ul>
+    );
 };
 
 export default NavBar;
