@@ -4,6 +4,7 @@ import { useState } from "react";
 const CreatePost = ({ posts, setPosts }) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
+    const date = Date();
 
     function handleCreate(event) {
         event.preventDefault();
@@ -11,6 +12,7 @@ const CreatePost = ({ posts, setPosts }) => {
             id: posts.length + 1,
             name: name,
             message: message,
+            date: date,
         };
         createPost(tempPost);
     }

@@ -20,6 +20,7 @@ const Post = ({ post }) => {
 
     return (
         <div>
+            <p>{post.date}</p>
             <p>{post.name}</p>
             <p>{post.message}</p>
 
