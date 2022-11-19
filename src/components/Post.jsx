@@ -7,13 +7,11 @@ const Post = ({ post }) => {
     const [isDisliked, setIsDisliked] = useState(false);
 
     function handleDislikeClick() {
-        console.log(post.isDisliked);
         setIsDisliked(!isDisliked);
         setIsLiked(false);
     }
 
     function handleLikeClick() {
-        console.log(post.isLiked);
         setIsLiked(!isLiked);
         setIsDisliked(false);
     }

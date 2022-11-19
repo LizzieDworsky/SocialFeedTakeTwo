@@ -36,7 +36,9 @@ const CreatePost = ({ posts, setPosts }) => {
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
             />
-            <button type="submit">Post</button>
+            <button className="create-post-button" type="submit">
+                Post
+            </button>
         </form>
     );
 };
