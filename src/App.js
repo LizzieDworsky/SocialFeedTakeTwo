@@ -9,22 +9,16 @@ function App() {
             id: 1,
             name: "Amy Dworsky",
             message: "I love the 49ers!",
-            isLiked: false,
-            isDisliked: false,
         },
         {
             id: 2,
             name: "Josh Dworsky",
             message: "Go Niners Go!",
-            isLiked: false,
-            isDisliked: false,
         },
         {
             id: 3,
             name: "Mike Terrill",
             message: "Go Packers!",
-            isLiked: false,
-            isDisliked: false,
         },
     ]);
 

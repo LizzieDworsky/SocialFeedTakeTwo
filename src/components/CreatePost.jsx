@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 const CreatePost = ({ posts, setPosts }) => {
-    const [name, setName] = useState("Name Goes here");
-    const [message, setMessage] = useState("Body goes here");
+    const [name, setName] = useState("");
+    const [message, setMessage] = useState("");
 
     function handleCreate(event) {
         event.preventDefault();
@@ -11,8 +11,6 @@ const CreatePost = ({ posts, setPosts }) => {
             id: posts.length + 1,
             name: name,
             message: message,
-            isLiked: false,
-            isDiliked: false,
         };
         createPost(tempPost);
     }

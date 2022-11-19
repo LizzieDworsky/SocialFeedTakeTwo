@@ -1,7 +1,6 @@
 import { FaThumbsDown, FaThumbsUp } from "react-icons/fa";
 import React from "react";
 import { useState } from "react";
-import { useEffect } from "react";
 
 const Post = ({ post }) => {
     const [isLiked, setIsLiked] = useState(false);
